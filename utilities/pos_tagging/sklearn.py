@@ -120,7 +120,7 @@ def print_categorization_outcome(hits, test_space, train_space, target_contexts,
             neighbors = v['neighbors']
             cosine = v['cosine']
 
-            test_instance = get_counts(test_space, k.split('|')[-1], target_contexts)
+            test_instance = get_counts(test_space, k, target_contexts)
             test_instance.append(pos)
             test_instance.append(predicted)
             test_instance.append(str(cosine))
